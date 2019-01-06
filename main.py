@@ -1,6 +1,6 @@
 from time import sleep
 import sys
-#test
+
 import answer
 
 intro = ('----------\n'
