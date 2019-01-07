@@ -15,7 +15,7 @@ def Uanswer(optionstotal):
             continue
 
 
-class branch1(object):
+class branch1:
     # First question branch
     def __init__(self, value):
         self.value = value
@@ -31,7 +31,7 @@ class branch1(object):
             return "You're shot at four times!"
 
 
-class branch2(object):
+class branch2:
     # Second question branch
     def __init__(self, value, value2):
         self.value = value
