@@ -1,10 +1,10 @@
 def Uanswer(optionstotal):
-    #Output a number for answer to question. Checking to ensure number is chosen.
+    # Output a number for answer to question. Checking to ensure number is chosen.
     while True:
         answer = input(": ")
         try:
             val = int(answer)
-            if val in range(1,optionstotal+1):
+            if val in range(1, optionstotal + 1):
                 print("")
                 return val
             else:
@@ -14,9 +14,10 @@ def Uanswer(optionstotal):
             print("put in a number")
             continue
 
+
 class branch1(object):
-    #First question branch
-    def __init__(self,value):
+    # First question branch
+    def __init__(self, value):
         self.value = value
 
     def output(self):
@@ -29,9 +30,10 @@ class branch1(object):
         if self.value == 4:
             return "You're shot at four times!"
 
+
 class branch2(object):
-    #Second question branch
-    def __init__(self,value,value2):
+    # Second question branch
+    def __init__(self, value, value2):
         self.value = value
         self.value2 = value2
 
@@ -41,4 +43,4 @@ class branch2(object):
         if self.value == 2 and self.value2 == 1:
             return "You dodged the bullet!"
         if self.value == 2 and self.value2 > 1:
-            return "You dodge "+str(self.value2)+" bullets!"
+            return "You dodge " + str(self.value2) + " bullets!"
